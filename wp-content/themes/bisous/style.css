@@ -1,0 +1,311 @@
+/*   
+Theme Name: Bisous theme
+Theme URI: http://emmanuelplougoulm.com
+Description: Theme for Emmanuel Plougoulm
+Author: Paulo Barcelos
+Author URI: http://paulobarcelos.com
+Version: 1
+*/
+
+/* ===== global structure ===== */
+
+* { 
+	margin: 0;
+	padding: 0;
+	}
+	
+	
+html {
+	background: #ffffff;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	overflow-x: hidden;
+	width:1260px;
+}	
+
+a {
+	outline: 0;
+}
+
+/* ===== utils ===== */
+.hidden {
+	display: none;
+}
+.transparent{
+	/* for IE */
+ 	filter:alpha(opacity=25);
+  	/* CSS3 standard */
+  	opacity:0.25;
+}
+/* ===== font-face ===== */
+@font-face {
+    font-family: 'QuicksandBook';
+    src: url('fonts/Quicksand_Book-webfont.eot?') format('eot'),
+         url('fonts/Quicksand_Book-webfont.woff') format('woff'),
+         url('fonts/Quicksand_Book-webfont.ttf') format('truetype'),
+         url('fonts/Quicksand_Book-webfont.svg#webfontQNKLE8Me') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ===== grid ===== */
+.grid-1col, .grid-2col, .grid-3col, .grid-4col, .grid-5col,
+.grid-extra-1col, .grid-extra-2col, .grid-extra-3col, .grid-extra-4col, .grid-extra-5col{
+	margin-right: 10px;
+	margin-bottom: 10px;
+	float: left;
+}
+.grid-1col {
+	width: 221px;
+}
+.grid-2col {
+	width: 452px;
+}
+.grid-3col {
+	width: 683px;
+}
+.grid-4col {
+	width: 914px;
+}
+.grid-5col {
+	width: 1145px;
+}
+.grid-last {
+	margin-right: 0;
+}
+.grid-extra-1col {
+	width: 231px;
+}
+.grid-extra-2col {
+	width: 462px;
+}
+.grid-extra-3col {
+	width: 693px;
+}
+.grid-extra-4col {
+	width: 924px;
+}
+.grid-extra-5col {
+	width: 1155px;
+}
+
+
+.fxd-span-0col, .fxd-span-1col, .fxd-span-2col, .fxd-span-3col, .fxd-span-4col, .fxd-top-logo, .fxd-top-content{
+	position:fixed;
+}
+
+.abs-span-0col, .abs-span-1col, .abs-span-2col, .abs-span-3col, .abs-span-4col{
+	position:relative;
+}
+
+.fxd-span-0col, .abs-span-0col {
+	left: 45px;
+}
+.fxd-span-1col, .abs-span-1col {
+	left: 276px;
+}
+.fxd-span-2col, .abs-span-2col {
+	left: 507px;
+}
+.fxd-span-3col, .abs-span-3col {
+	left: 758px;
+}
+.fxd-span-4col, .abs-span-4col {
+	left: 969px;
+}
+
+.fxd-top-logo {
+	top: 80px;
+}
+.fxd-top-content {
+	top: 140px;
+}
+
+/* ===== header ===== */
+
+#header #home-link-type {
+	float: left;
+	background: url(images/logo_type.gif) no-repeat;
+	width: 221px;
+	height: 8px;
+	margin: 0 0 3px 0;
+}
+
+#header #tagline {
+	float: left;
+	background: url(images/tagline.gif) no-repeat;
+	width: 221px;
+	height: 8px;
+}
+/* ===== sidebar ===== */
+
+#nav h4 {
+	font-size: 12px;
+	text-transform: capitalize;
+}
+#nav ul {
+	margin-bottom: 10px;
+	list-style:none;
+}
+#nav a {
+	color: #000;
+	text-decoration: none;
+}
+#nav ul .current{
+	font-weight: bold;
+}
+/* ===== main-title =====*/
+.main-title{
+	height: 20px;
+	border:none;
+	border-width:1px;
+	border-bottom-style:solid;
+	font-size: 12px;
+	text-transform: capitalize;
+	line-height: 25px;
+	margin-bottom: 15px;
+}
+.main-title h3, .main-title h2{
+	font-size: 12px;
+}
+.main-title p{
+	font-weight: bold;
+}
+/* ===== center-title =====*/
+#center-title label{
+	display:inline;
+	float:left;
+	margin: 0 10px 0 0;
+	text-transform: none;
+}
+#center-title .graphic-design {
+	 color:#926a35;
+}
+#center-title .video {
+	 color:#5aaeb7;
+}
+#center-title .experiment {
+	 color:#5e5bc1;
+}
+/* ===== main content =====*/
+
+#main-content, 
+#page-content {
+	float: left;
+	z-index:-1;
+	margin-top: 180px;
+	margin-bottom: 42px;
+}
+#main-content {
+	margin-top: 180px;
+}
+#page-content {
+	margin-top: 140px;
+}
+
+#main-content #thumbnail {
+	position:relative;
+	float: left;
+	width: 221px;
+	height: 148px;
+}
+#main-content #thumbnail #thumbnail-color{
+	position:absolute;
+	top:0;
+	width: 221px;
+	height: 148px;
+}
+#main-content #thumbnail .graphic-design {
+	 background-color:#926a35;
+}
+#main-content #thumbnail .video {
+	 background-color:#5aaeb7;
+}
+#main-content #thumbnail .experiment {
+	 background-color:#5e5bc1;
+}
+
+#main-content #thumbnail #thumbnail-image-container{
+	position:absolute;
+	top:0;
+	width: 221px;
+	height: 148px;
+}
+#main-content #thumbnail #thumbnail-info{
+	position:absolute;
+	top:0;
+	width: 221px;
+	height: 148px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#main-content #thumbnail #thumbnail-info #thumbnail-date::before {
+	font: 13px/13px 'QuicksandBook', Helvetica, Arial, sans-serif;
+	content: "–";
+	display: block;
+}
+
+#main-content #thumbnail #thumbnail-info #thumbnail-title{
+	font: 20px/20px 'QuicksandBook', Helvetica, Arial, sans-serif;
+	margin: 55px 10px 0 10px;
+}
+#main-content #thumbnail #thumbnail-info #thumbnail-date{
+	font: 13px/13px 'QuicksandBook', Helvetica, Arial, sans-serif;
+	margin-top: -3px;
+}
+
+#main-content ul {
+	margin-bottom: 10px;
+	list-style:none;
+}
+#main-content li{
+	margin: 0 0 10px 0;
+}
+#main-content p,
+#page-content p{
+	margin-bottom: 16px;
+}
+
+#main-content p a,
+#page-content p a{
+	color: #000;
+	text-decoration: underline;
+}
+/* ===== post-info ===== */
+#post-info a{
+	color: #000;
+	text-decoration: underline;
+}
+#post-info  #post-date{
+	font-size: 12px;
+	font-style: italic;
+	text-transform: capitalize;
+	font-weight: bold;
+}
+#post-info  #post-credits{
+	font-size: 10px;
+	font-style: italic;
+}
+#post-info  #post-content{
+}
+#post-info  #post-translation{
+	color: #00A2E0;
+}
+#post-info #post-date::before,
+#post-info #post-credits::before,
+#post-info #post-content::before,
+#post-info #post-translation::before {
+	content: "-";
+	display: block;
+	color: #000;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 12px;
+}
